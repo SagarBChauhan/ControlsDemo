@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        #header
+        {
+            text-align:center;
+            background-color:Gray;
+            border:1px solid black;
+        }
+         #nav
+        {
+            background-color:#b3c6ff;
+            padding:5px;
+        }
+        .footer
+        {
+            text-align:center;
+            padding-bottom:5%;
+            background-color:Yellow;
+        }
+        ul
+        {
+            list-style-type:none;
+        }
+        li a
+        {
+            
+            color:White;
+            font-size:15px;
+            column-width:5%;
+        }
+        li
+        {
+            display:inline;
+            padding-left:2px;
+            column-width:20px;
+        }
+        
+       
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header id="header">
+        <h1>My ASP.NET Website</h1>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="About.aspx">About</a></li>
+          
+        </ul>
+    </nav>
+    <div id="content">
+         <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   <footer id="footer" class="footer">
+        Copyright @2018
+   </footer>
+    </form>
+</body>
+</html>

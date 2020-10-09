@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="~/Default.aspx" title="Home" />
+    <siteMapNode url="~/About.aspx" title="About"  />
+    <siteMapNode url="~/Student.aspx" title="Student">
+      <siteMapNode url="~/MultiView.aspx" title="Multi View">
+        <siteMapNode url="~/Default4.aspx" title="Contact"  />
+      </siteMapNode>
+      <siteMapNode url="~/WizardControl.aspx" title="Wizard"  />
+
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
